@@ -20,6 +20,8 @@ public class Produto implements Serializable {
 	
 	private String nomeProduto;
 	private int quantidade;
+	private BigDecimal valor;
+	
 	public long getIdProduto() {
 		return IdProduto;
 	}
@@ -44,7 +46,7 @@ public class Produto implements Serializable {
 	public void setValor(BigDecimal valor) {
 		this.valor = valor;
 	}
-	private BigDecimal valor;
+	
 	
 	
 }
