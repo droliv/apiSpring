@@ -1,4 +1,4 @@
-package com.apiSpring.apiSpring;
+package com.apiSpring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
