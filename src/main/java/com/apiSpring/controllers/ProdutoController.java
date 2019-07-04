@@ -37,9 +37,8 @@ public class ProdutoController {
 	@PutMapping("/produto/{idProduto}")
 	public Produto alterarProduto(@PathVariable(value="idProduto") long idProduto, @RequestBody Produto produtoalter) {
 		Produto produto = produtoRepository.findById(idProduto);
-		produto.setNomeProduto(produtoalter.getNomeProduto());
-		produto.setQuantidade(produtoalter.getQuantidade());
-		produto.setValor(produtoalter.getValor());
+		produtoalter.setIdProduto(produto.getIdProduto());
+		produto = produtoalter;
 		return produtoRepository.save(produto);
 	}
 	@DeleteMapping("/produto/{idProduto}")
